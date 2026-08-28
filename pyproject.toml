@@ -1,7 +1,7 @@
 [project]
 name = "fenix"
 version = "0.1.0"
-description = "Add your description here"
+description = "Local market-signal discovery: embedding similarity ranking plus RAG over the harvested corpus"
 authors = [
     { name = "Slovikovskaya", email = "vslovik@gmail.com" }
 ]
@@ -10,6 +10,8 @@ dependencies = [
     "feedparser>=6.0.14",
     "pyyaml>=6.0.3",
     "requests>=2.34.2",
+    "sqlite-vec>=0.1.9",
+    "trafilatura>=2.2.0",
 ]
 
 [project.scripts]
@@ -18,3 +20,8 @@ fenix = "fenix:main"
 [build-system]
 requires = ["uv_build>=0.12.3,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

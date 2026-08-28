@@ -1,12 +1,17 @@
 # fenix
 
-A discovery tool for reading the state of a job market, built because keyword matching
-doesn't work.
+A local, no-API-key tool for reading the state of a market — and then asking it questions.
 
-It mines signal sources broadly, embeds every new item locally, and ranks them by cosine
-similarity against one or more free-text *position* descriptions — a role you want, a role
-you're hiring for, a direction you're watching. No API keys, no cloud inference: embeddings
-run against a local Ollama model.
+Two halves over one corpus:
+
+- **Scan** ranks an incoming stream of articles against free-text *position* descriptions,
+  surfacing what's closest to something you described in prose rather than something you
+  guessed the keywords for.
+- **Ask** answers a question from the same corpus with retrieval-augmented generation, citing
+  the specific chunks each claim came from.
+
+Embeddings and generation both run against a local [Ollama](https://ollama.com). No API keys,
+no per-token cost, no rate limits.
 
 ## Why similarity rather than keywords
 
@@ -15,48 +20,74 @@ items never contained the words a job title would suggest. Replacing the filter 
 similarity produced meaningful separation on the first run: agent and architecture content
 scored **0.58–0.66**, generic model-release news **0.36–0.49**.
 
-That gap is the whole point. A keyword filter answers "does this contain the word I guessed";
-a similarity score answers "how close is this to the thing I described" — and the description
-can be a paragraph of prose rather than a title someone has already invented.
+A keyword filter answers *"does this contain the word I guessed"*. A similarity score answers
+*"how close is this to the thing I described"* — and the description can be a paragraph of
+prose rather than a title someone has already invented.
 
-## Running the scan
+## Usage
 
-```
-uv run python src/fenix/signal_scan.py
-```
+```bash
+uv sync                                   # installs Python 3.13 and dependencies
 
-Fetches new items from the active sources in `search/sources.yaml`, scores each against every
-position file in `search/positions/`, and appends a ranked leaderboard to
-`search/signals_log.md` (the latest run is the last `## Scan — <timestamp>` section).
-
-**Requirements:** [uv](https://docs.astral.sh/uv/), and a local
-[Ollama](https://ollama.com) serving `nomic-embed-text`.
-
-**Dedupe:** each item is scored once, ever — items are marked seen in
-`.state/signal_scan_seen.json` after their first scan, so a second run usually reports zero new
-items unless something was actually published in between. To force a rescore — for example to
-compare results before and after editing a position file — reset the state first:
-
-```
-rm .state/signal_scan_seen.json
-uv run python src/fenix/signal_scan.py
+fenix ingest                              # fetch article text, chunk, embed, store
+fenix ask "what changed in agent tooling this month?"
+fenix ask "..." --show-chunks             # show what was retrieved, and how close
+fenix scan                                # rank the stream against positions/
+fenix stats                               # corpus size
+fenix reindex                             # rebuild vectors after changing model or metric
 ```
 
-## Writing a position
+**Requirements:** [uv](https://docs.astral.sh/uv/), and Ollama serving `nomic-embed-text`
+(embeddings) and `qwen2.5:7b` (generation). Both models are configurable in
+`src/fenix/embedding.py`.
+
+## How the retrieval works
+
+**Corpus.** `ingest` follows each feed link and extracts the article body with `trafilatura`,
+rather than embedding the RSS summary. A two-line summary cannot be meaningfully chunked, and
+retrieval over summaries can only ever return what the feed already told you.
+
+**Chunking.** Paragraph-aligned, packed to ~1200 characters, with 200 characters of overlap
+carried across each boundary. Oversized paragraphs are cut on sentence boundaries; runt tails
+are merged into their neighbour. The reasoning for each of those choices is in
+`src/fenix/chunking.py`, and the properties are pinned by tests.
+
+**Storage.** SQLite with [sqlite-vec](https://github.com/asg017/sqlite-vec) — one file, no
+daemon, no server. Vectors use `distance_metric=cosine`, not the `vec0` default of L2:
+`nomic-embed-text` does not return unit vectors, so under L2 a longer chunk is penalised for
+its magnitude rather than judged on its direction.
+
+At this corpus size brute-force cosine in Python would genuinely be correct, and a vector
+database is arguably over-engineering. sqlite-vec is the smallest thing that keeps metadata and
+vectors in one queryable place and still works when the corpus stops being small.
+
+**Answering.** The top *k* chunks are numbered and passed as the only permitted context. The
+model is instructed to cite every claim with the bracketed source number, and to say plainly
+when the corpus does not answer the question. That last instruction is the point: a RAG system
+that always answers is indistinguishable from one that is making things up.
+
+## Positions
 
 A position is a plain `.md` file in `search/positions/` describing, in your own words, what
-you're looking for. Not a title — a paragraph. The format is documented in
-`search/positions/README.md`.
+you're looking for — not a title, a paragraph. Format in `search/positions/README.md`.
 
-Any number can coexist: each run scores every item against every position, so one scan reads
+Any number can coexist: each scan scores every item against every position, so one run reads
 the market from several angles at once.
 
-## Design notes
+Writing a good one is less obvious than it looks — an embedding has no notion of negation, so
+naming a technology in order to reject it moves the anchor *toward* it. Measured findings on
+that, and on how much paragraph order matters, are in
+[`lessons/embedding-anchors.md`](lessons/embedding-anchors.md).
 
-- `search/discovery_mining_ideas.md` — why embeddings over keyword matching, and the ideas not
-  yet built
-- `search/discovery_pipeline.md` — the full mechanism, the source-discovery experiments, and
-  the open question about chaining runs
+## Tests
+
+```bash
+uv run pytest
+```
+
+Covers the chunking strategy's stated properties and the store's retrieval guarantees —
+including that vector search ranks by direction rather than magnitude, which is the reason the
+cosine metric is declared explicitly.
 
 ## Deliberately not automated
 

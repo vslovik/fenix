@@ -14,8 +14,9 @@ import re
 from pathlib import Path
 
 import feedparser
-import requests
 import yaml
+
+from .embedding import cosine_similarity, embed
 
 ROOT = Path(__file__).resolve().parents[2]
 SEARCH_DIR = ROOT / "search"
@@ -23,22 +24,6 @@ SOURCES_FILE = SEARCH_DIR / "sources.yaml"
 STATE_FILE = ROOT / ".state" / "signal_scan_seen.json"
 LOG_FILE = SEARCH_DIR / "signals_log.md"
 POSITIONS_DIR = SEARCH_DIR / "positions"
-
-OLLAMA_URL = "http://localhost:11434/api/embeddings"
-EMBED_MODEL = "nomic-embed-text"
-
-
-def embed(text: str) -> list[float]:
-    response = requests.post(OLLAMA_URL, json={"model": EMBED_MODEL, "prompt": text}, timeout=30)
-    response.raise_for_status()
-    return response.json()["embedding"]
-
-
-def cosine_similarity(a: list[float], b: list[float]) -> float:
-    dot = sum(x * y for x, y in zip(a, b))
-    norm_a = sum(x * x for x in a) ** 0.5
-    norm_b = sum(y * y for y in b) ** 0.5
-    return dot / (norm_a * norm_b) if norm_a and norm_b else 0.0
 
 
 def load_positions() -> dict:
