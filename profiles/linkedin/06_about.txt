@@ -1,0 +1,13 @@
+I'm a software architect — 15+ years in production systems, almost entirely in startups and internal startups, across fintech, e-commerce, pharma and publishing.
+
+The work I get pulled into is the recurring startup problem: services shipped under launch pressure without adequate testing, then stabilised. Incident response, re-architecture, and the test and release discipline that stops it happening again. Most recently that has meant a regulated UK consumer-credit platform — direct-debit collections, loan servicing, arrears, forbearance and statutory breathing space, and settlement calculations written against consumer-credit legislation. Regulation as code, behind a test suite larger than the production codebase.
+
+I've worked in all three configurations: taking a core system from problem statement to release, leading the team that could carry it, and now doing that work again with agentic tooling covering what the team used to. I'm comfortable in each. What I look for isn't a particular mode but a place where scope is defined and work is visible.
+
+What I genuinely enjoy is reusable design — interfaces with more than one implementation behind them, service and DTO boundaries that hold, domain events, and test frameworks other people can build against. My test of a design is whether someone new can deliver in their first week without having to understand the whole system. I designed an end-to-end API test framework on that principle and taught a team with no prior experience to work with it.
+
+On the data side: a LightGBM acquisition model over a 38M-row customer base, and a validation-set misuse defect I found in my own pipeline — early stopping on the test split — quantified across every published figure, with a pure-noise regression test pinning the corrected path to chance. My NLP background is hands-on rather than API-deep — my degree thesis fine-tuned BERT, RoBERTa and XLNet to state-of-the-art on the FNC-1 stance-detection benchmark, published at LREC 2020.
+
+I'm based in Pisa and work remotely. Three universities, the CNR and the Virgo interferometer sit within a few kilometres, and there's an international airport for when being onsite matters.
+
+Looking for agentic AI/LLM engineering, LLM evaluation and observability, AI integration, or software architecture and platform reliability.

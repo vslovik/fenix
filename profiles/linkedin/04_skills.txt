@@ -1,0 +1,100 @@
+# LinkedIn skills are a CONTROLLED VOCABULARY — type each entry and take LinkedIn's nearest
+# offered match. The names below are intent, not exact strings. Where nothing matches, skip it
+# rather than forcing free text: an unmatched skill gives no search benefit.
+#
+# Confirmed mismatches so far (add to this list as you find more):
+#   "Serverless Architectures"   -> use "Serverless Computing"
+#   "Event-Driven Architecture"  -> use "Event-driven"
+#
+# Expect no exact match for: LLM Application Development, LLM Evaluation, Vector Search,
+# Embeddings, Model Validation, polars, duckdb, dbt. Safest substitutes are the broader terms
+# LinkedIn does carry: Machine Learning, Data Engineering, Natural Language Processing (NLP).
+#
+# LinkedIn Skills — proposal
+# LinkedIn allows up to 50; the 3 you PIN show prominently and carry the most weight in
+# recruiter search. Your current list is Java/JS/DevOps-weighted — the same problem the 2023
+# CV had. Order below is deliberate: pinned three, then descending relevance to your targets.
+
+## Pin these three
+1. Software Architecture
+2. Large Language Models (LLM)
+3. Python
+
+Reasoning: "Software Architecture" is the identity you chose and it spans all four target
+families. "Large Language Models (LLM)" is the single highest-traffic search term for the
+roles you want. "Python" is the language every one of those roles filters on.
+
+## Then, in this order
+
+AI/LLM
+- LLM Application Development
+- AI Agents
+- Prompt Engineering
+- Embeddings
+- Semantic Search
+- Vector Search
+- LLM Evaluation
+- Model Validation
+- MLOps
+
+ML & data
+- Machine Learning
+- LightGBM
+- XGBoost
+- scikit-learn
+- PyTorch
+- Hugging Face Transformers
+- Feature Engineering
+- Data Engineering
+- ETL
+- dbt
+- Natural Language Processing (NLP)
+
+Platform & architecture
+- Django
+- AWS Lambda
+- Amazon Web Services (AWS)
+- Terraform
+- Event-driven
+- Microservices
+- Distributed Systems
+- Design Patterns
+- Domain-Driven Design
+- PostgreSQL
+- Serverless Computing
+
+Reliability & governance
+- Incident Response
+- Site Reliability Engineering (SRE)
+- Test Automation
+- End-to-End Testing
+- Data Privacy
+- Regulatory Compliance
+
+Leadership
+- Technical Leadership
+- Engineering Management
+- Team Building
+- Code Review
+
+Legacy (keep, do not promote — they are true and they cover the earlier history)
+- Java
+- Spring Framework
+- Go
+- SQL
+- Docker
+
+## Two that need your ruling
+
+- **RAG (Retrieval-Augmented Generation)** — you have the components (embeddings, cosine
+  similarity, retrieval) but not yet an end-to-end pipeline where retrieval feeds a cited LLM
+  answer; that is still demo spec #2. Listing it is defensible for a target role and
+  indefensible if an interviewer asks for the pipeline. Your call.
+- **LangChain / LangGraph / CrewAI / AutoGen** — recommend NOT listing. No evidence anywhere,
+  and these are the first thing an agentic-AI interviewer probes. Absence costs you some
+  search hits; a bluff costs you the interview.
+
+## Delete from the current list
+Anything JS-framework-specific (jQuery, Bootstrap, Vue, React as headline skills), PHP,
+Symfony/Zend/Laravel/Phalcon, and Windows/MacOS. They are true and they pull your profile
+toward searches you are trying to leave.

@@ -1,0 +1,121 @@
+{
+  "target_roles": [
+    {
+      "id": "ai_agent_engineer",
+      "category": "Agent/Workflow Engineering",
+      "keywords": ["AI Agent Engineer", "Agentic Engineer", "AI Agent Developer"],
+      "skills": ["LangGraph", "CrewAI", "AutoGen", "agent orchestration", "multi-agent systems"]
+    },
+    {
+      "id": "agentic_workflow_architect",
+      "category": "Agent/Workflow Engineering",
+      "keywords": ["Agentic Workflow Architect", "Multi-Agent Architect"],
+      "skills": ["multi-agent orchestration", "planning", "tool use", "memory systems", "handoffs"]
+    },
+    {
+      "id": "agent_observability_engineer",
+      "category": "Agent/Workflow Engineering",
+      "keywords": ["Agent Observability Engineer", "AI Observability Engineer"],
+      "skills": ["LLM observability", "agent monitoring", "hallucination detection", "tool misuse detection"]
+    },
+    {
+      "id": "llmops_engineer",
+      "category": "LLM Operations & Infrastructure",
+      "keywords": ["LLMOps Engineer", "MLOps Engineer", "AI Infrastructure Engineer"],
+      "skills": ["prompt testing", "model evaluation", "latency optimization", "LLM lifecycle management"]
+    },
+    {
+      "id": "prompt_engineer",
+      "category": "LLM Operations & Infrastructure",
+      "keywords": ["Prompt Engineer", "Prompt Architect"],
+      "skills": ["prompt design", "prompt versioning", "eval benchmarks"]
+    },
+    {
+      "id": "rag_engineer",
+      "category": "LLM Operations & Infrastructure",
+      "keywords": ["RAG Engineer", "Retrieval Engineer", "Search Engineer"],
+      "skills": ["retrieval-augmented generation", "chunking", "embedding tuning", "vector databases"]
+    },
+    {
+      "id": "model_router_gateway_engineer",
+      "category": "LLM Operations & Infrastructure",
+      "keywords": ["Model Router Engineer", "Model Gateway Engineer", "LLM Gateway Engineer"],
+      "skills": ["API routing", "fallback chains", "caching", "multi-model cost allocation"]
+    },
+    {
+      "id": "ai_alignment_specialist",
+      "category": "AI Safety & Evaluation",
+      "keywords": ["AI Alignment Specialist", "Alignment Researcher"],
+      "skills": ["RLHF", "DPO", "constitutional AI", "safety guardrails"]
+    },
+    {
+      "id": "eval_engineer",
+      "category": "AI Safety & Evaluation",
+      "keywords": ["Eval Engineer", "Evaluation Engineer"],
+      "skills": ["eval benchmarks", "tool-calling accuracy", "multi-step reasoning eval", "plan adherence"]
+    },
+    {
+      "id": "synthetic_data_engineer",
+      "category": "Data & Knowledge Engineering",
+      "keywords": ["Synthetic Data Engineer"],
+      "skills": ["synthetic dataset generation", "data validation", "fine-tuning data curation"]
+    },
+    {
+      "id": "knowledge_base_architect",
+      "category": "Data & Knowledge Engineering",
+      "keywords": ["Knowledge Base Architect", "Knowledge Graph Engineer"],
+      "skills": ["vector stores", "knowledge graphs", "tool APIs for agent consumption"]
+    },
+    {
+      "id": "embedding_pipeline_engineer",
+      "category": "Data & Knowledge Engineering",
+      "keywords": ["Embedding Pipeline Engineer"],
+      "skills": ["chunking pipelines", "embedding generation", "retrieval systems at scale"]
+    },
+    {
+      "id": "ai_integration_engineer",
+      "category": "Integration & Product Roles",
+      "keywords": ["AI Integration Engineer"],
+      "skills": ["LLM API integration", "SaaS integrations", "database automation"]
+    },
+    {
+      "id": "agent_ux_designer",
+      "category": "Integration & Product Roles",
+      "keywords": ["Agent UX Designer", "AI Interaction Designer"],
+      "skills": ["chat interface design", "multi-turn workflow UX", "error recovery UX for agentic products"]
+    },
+    {
+      "id": "ai_product_engineer",
+      "category": "Integration & Product Roles",
+      "keywords": ["AI Product Engineer", "Agentic Product Engineer"],
+      "skills": ["full-stack development", "LLM product features", "agent-based product design"]
+    },
+    {
+      "id": "enterprise_automation_agent_engineer",
+      "category": "Emerging Niches",
+      "keywords": ["AI Agent for Enterprise Automation", "Enterprise AI Automation Engineer"],
+      "skills": ["Slack bots", "CRM agents", "internal support automation"]
+    },
+    {
+      "id": "text_to_sql_code_agent_developer",
+      "category": "Emerging Niches",
+      "keywords": ["Text-to-SQL Developer", "Code Agent Developer"],
+      "skills": ["SQL generation", "code generation agents", "code execution safety"]
+    },
+    {
+      "id": "autonomous_systems_engineer",
+      "category": "Emerging Niches",
+      "keywords": ["Autonomous Systems Engineer"],
+      "skills": ["research agents", "code generation pipelines", "multi-agent swarms"]
+    },
+    {
+      "id": "site_reliability_engineer",
+      "category": "Emerging Niches",
+      "keywords": ["Site Reliability Engineer", "Platform Reliability Engineer", "SRE"],
+      "skills": ["incident response", "service re-architecture", "reliability engineering", "production monitoring"]
+    }
+  ],
+  "excluded_companies": [],
+  "preferred_locations": ["Remote", "Pisa"],
+  "keywords_to_ignore": []
+}

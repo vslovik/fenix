@@ -1,0 +1,50 @@
+# LinkedIn — Education, Publications, Languages
+# Quick-correction block. Your current profile carries the old versions of all three.
+
+## Publications
+
+Title:  Transfer Learning from Transformers to Fake News Challenge Stance Detection (FNC-1)
+Venue:  Proceedings of the 12th Conference on Language Resources and Evaluation (LREC 2020),
+        pages 1211-1218, Marseille, May 2020
+URL:    http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.152.pdf
+Co-author: Giuseppe Attardi, University of Pisa
+
+Description:
+My Laurea Magistrale thesis (Italian second-cycle degree, five years, master's-level under Bologna). Two contributions: I improved the best-reported FNC-1 stance-detection
+model by adding BERT sentence embeddings as a model feature, then fine-tuned BERT, XLNet and
+RoBERTa on the extended dataset to reach state-of-the-art on the task. The Fake News Challenge
+Stage 1 had drawn fifty competing teams.
+
+## Education
+
+University of Pisa — Laurea Magistrale, Informatica Umanistica — 110/110
+  Five-year second-cycle degree (master's-level). Thesis published at LREC 2020 (above). Coursework in computational linguistics, natural
+  language processing, information retrieval, machine learning, distributed systems and
+  parallel algorithms.
+
+Urals State University — PhD (Candidate of Sciences), Theoretical Physics
+  Nine years in physics: a five-year specialist degree (thesis in solid state physics), a year
+  as research intern, then three years of postgraduate research at the Theoretical Physics
+  chair, dissertation defended. Candidate of Sciences is the standard EU equivalence for PhD;
+  the doctoral part alone ran four years, against the three typical of an Italian dottorato.
+
+Urals State University — Master, Art History
+
+[CORRECTION NEEDED: your current LinkedIn shows "PhD Solid State Physics" and "Master's
+Theoretical Physics" — the fields are swapped relative to the actual path. Fix to match the
+above, which is what the CV now says.]
+
+## Licences & certifications
+
+Codility — Golden Award (Palladium), 2020
+
+## Languages
+
+Russian — Native or bilingual
+English — Full professional
+Italian — Full professional
+French — Full professional
+German — Full professional
+Spanish — Full professional
+
+[Portuguese and Japanese deliberately omitted — in progress, no level yet.]

@@ -1,0 +1,20 @@
+[project]
+name = "fenix"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Slovikovskaya", email = "vslovik@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "feedparser>=6.0.14",
+    "pyyaml>=6.0.3",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+fenix = "fenix:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"

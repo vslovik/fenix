@@ -1,0 +1,64 @@
+# Seed sources for signal_scan.py — a growing config, not a finished list.
+# Add/prune entries as they prove useful or not. See PLAN.md and creative_ideas.md (B1)
+# for why signal sources (where companies surface *before* they post a role) come
+# before job boards (category 2, not built yet).
+#
+# status: active  -> fetched normally
+# status: blocked -> fetch attempted, known to fail (reason noted); not called until fixed
+# status: manual  -> no feed exists; check by hand, kept here so it isn't forgotten
+
+signal_sources:
+  - name: "Latent Space"
+    type: rss
+    url: "https://www.latent.space/feed"
+    status: active
+
+  # Added 2026-08-15: ranked by embedding similarity to Latent Space's own recent content
+  # (src/fenix/source_similarity.py), not by reputation — see discovery_mining_ideas.md and
+  # signals_log.md for the method. Scores were a smooth gradient, no natural cutoff; these five
+  # were >=0.70. The rest of the ranked list (Enterprise AI Trends, Louis-Francois Bouchard's
+  # Substack, Artificial Ignorance, Ahead of AI, Artificial Fintelligence, The Neural Maze) are
+  # candidates, not added — add on purpose if one earns its place.
+  - name: "ThursdAI"
+    type: rss
+    url: "https://sub.thursdai.news/feed"
+    status: active
+
+  - name: "Simon Willison's Newsletter"
+    type: rss
+    url: "https://simonw.substack.com/feed"
+    status: active
+
+  - name: "Coding with Intelligence"
+    type: rss
+    url: "https://codingwithintelligence.com/feed"
+    status: active
+
+  - name: "Interconnects AI"
+    type: rss
+    url: "https://www.interconnects.ai/feed"
+    status: active
+
+  - name: "Turing Post"
+    type: rss
+    url: "https://turingpost.substack.com/feed"
+    status: active
+
+  - name: "r/LLMDevs"
+    type: rss
+    url: "https://www.reddit.com/r/LLMDevs/new/.rss"
+    status: blocked
+    note: "Reddit returns 403/429 to non-browser requests as of 2026-08-15. Needs an
+      authenticated client (e.g. PRAW) instead of plain RSS — not built yet."
+
+  - name: "MLOps Community Slack"
+    type: manual
+    url: "https://mlops.community/"
+    status: manual
+    note: "No public RSS/export. Check manually for now."
+
+# Deprioritized (2026-08-15): job boards mostly surface what's already knowable by looking
+# (known companies, known titles) — not real discovery. signal_scan.py's value is that it's
+# forward-looking: it surfaces new posts over time, which by construction includes what
+# wasn't already known. Not building category-2 tooling for now.
+job_board_sources: []
