@@ -56,7 +56,7 @@ def rank(reference_name: str, reference_text: str, candidates: list[tuple[str, s
 
 if __name__ == "__main__":
     # Relevance feedback: reference is the top-scoring signal item from signals_log.md
-    # (score 0.657 against positions/my_target_role.md), not the generic Latent Space feed.
+    # (score 0.657 against positions/target_role.md), not the generic Latent Space feed.
     top_signal_title = "Ontologies Are So Back: Why AI Agents Are Reviving the Semantic Web"
     top_signal_summary = sample_text("https://www.latent.space/feed", n=1)  # picks latest, override below
 

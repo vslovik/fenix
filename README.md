@@ -13,6 +13,10 @@ Two halves over one corpus:
 Embeddings and generation both run against a local [Ollama](https://ollama.com). No API keys,
 no per-token cost, no rate limits.
 
+It is a **market-intelligence tool**, not a job board or an applicant tracker: it reads the
+state of a market against a description you write, and the description can be anything you want
+to find more of.
+
 ## Why similarity rather than keywords
 
 The first version filtered by keyword and scored **0 out of 20** on real data — the interesting
@@ -72,7 +76,8 @@ A position is a plain `.md` file in `search/positions/` describing, in your own 
 you're looking for — not a title, a paragraph. Format in `search/positions/README.md`.
 
 Any number can coexist: each scan scores every item against every position, so one run reads
-the market from several angles at once.
+the market from several angles at once — a role you want, a role you're hiring for, a
+technology you're watching. The tool doesn't know or care which; a position is a position.
 
 Writing a good one is less obvious than it looks — an embedding has no notion of negation, so
 naming a technology in order to reject it moves the anchor *toward* it. Measured findings on
@@ -93,3 +98,7 @@ cosine metric is declared explicitly.
 
 No cron, no scheduling. Runs stay manual until the tool has proven useful over weeks of real
 use — automating something that produces noise just produces noise on a schedule.
+
+## Licence
+
+MIT — see [`LICENSE`](LICENSE).

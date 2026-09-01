@@ -13,13 +13,13 @@ picked up automatically, no code changes needed. See `positions/README.md`.
 **`sources.yaml`** — RSS feed sources to scan. `status: active/blocked/manual`, always with a
 reason if not active — a failure is information to react to, not a thing to hide.
 
-**`src/fenix/signal_scan.py`** — the recurring loop. Fetches new items from active sources,
+**`../src/fenix/signal_scan.py`** — the recurring loop. Fetches new items from active sources,
 embeds each (local Ollama, `nomic-embed-text`), scores by cosine similarity against every
 position vector, appends a ranked leaderboard per position to `signals_log.md`. Dedupes so
 each item is only ever scored once (see `README.md` for the reset command when you want to
 rescore the same batch, e.g. after editing a position file). **Run manually — no cron.**
 
-**`src/fenix/source_similarity.py`** — a one-off discovery utility, not part of the recurring
+**`../src/fenix/source_similarity.py`** — a one-off discovery utility, not part of the recurring
 loop. Scores candidate sources/items against a reference by the same embedding mechanism.
 Used today for two different experiments:
 
@@ -29,7 +29,7 @@ Used today for two different experiments:
    Neural Maze, which "sounded" close, scored near the bottom).
 2. **Relevance feedback**: instead of asking "what's like Latent Space in general," ask "what's
    like the *specific item* that scored best against my position." Seeded a WebSearch from the
-   top signal ("Ontologies Are So Back," 0.657 against `my_target_role`), found a niche cluster
+   top signal ("Ontologies Are So Back," 0.657 against `target_role`), found a niche cluster
    (Year of the Graph, Ken Huang's Substack, Context & Chaos) that scored 0.65–0.74 against that
    specific item — well above what the generic candidates (Simon Willison 0.606, ThursdAI
    0.587) scored against the *same* reference. Seeding from what actually matched beats seeding
@@ -73,5 +73,5 @@ own content — see `sources.yaml` comments for the full ranked list and what wa
 Blocked: r/LLMDevs (Reddit anti-bot). Manual-only: MLOps Community Slack (no feed).
 
 First run on the broadened set already surfaced a different top cluster than Latent-Space-only
-did — Turing Post's agent/enterprise-AI content dominated the top of `my_target_role`'s ranking
+did — Turing Post's agent/enterprise-AI content dominated the top of `target_role`'s ranking
 this time. Worth watching whether that holds up over more runs, or was one good day.
