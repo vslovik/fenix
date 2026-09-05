@@ -37,6 +37,8 @@ fenix ingest                              # fetch article text, chunk, embed, st
 fenix ask "what changed in agent tooling this month?"
 fenix ask "..." --show-chunks             # show what was retrieved, and how close
 fenix scan                                # rank the stream against positions/
+fenix score                               # score each position against the probe postings
+fenix rate                                # rate the last scan by hand, compare with the ranking
 fenix stats                               # corpus size
 fenix reindex                             # rebuild vectors after changing model or metric
 ```
@@ -83,6 +85,50 @@ Writing a good one is less obvious than it looks — an embedding has no notion 
 naming a technology in order to reject it moves the anchor *toward* it. Measured findings on
 that, and on how much paragraph order matters, are in
 [`lessons/embedding-anchors.md`](lessons/embedding-anchors.md).
+
+## Measuring whether a position works
+
+Two commands, answering two different questions. They are not interchangeable.
+
+**`fenix score`** — is the anchor *aimed* correctly? It scores each position against the
+labelled probe postings in `search/probes/`, some marked `want: true` and some deliberately
+`want: false`. It reports separation (the gap between the group means), margin (lowest wanted
+minus highest unwanted — the number that says whether a threshold could ever separate them) and
+inversions. Each run is compared against the previous one, because an anchor edit is only
+meaningfully judged as a before and after.
+
+The controls are the point. An edit that raises the wanted scores *and* the unwanted ones has
+changed the document's verbosity, not its aim, and without a control every edit looks like an
+improvement.
+
+**`fenix rate`** — does the *ranking* agree with you? It replays the last scan with the scores
+hidden and the order shuffled, takes a rating per item, and reports precision@k against your
+labels. Scores are hidden because if you see the ranker's answer first you will agree with it,
+and the labels stop being independent of the thing they are measuring.
+
+**Why both.** `score` measures the anchor against job postings; `scan` uses it to rank articles.
+Those are different genres with different vocabulary, and an anchor that separates postings
+cleanly can still rank industry news badly. Probe scores are a proxy; `search/ratings.md` is the
+only ground truth in the repo.
+
+**Why either.** The anchor is prose that behaves like a parameter — it gets edited by taste and
+changes the system's behaviour. Why that needs instruments at all, why the scanner cannot be one
+of them, and why there is deliberately no drift command yet, is in
+[`lessons/measuring-a-position.md`](lessons/measuring-a-position.md).
+
+### The provenance line in the log
+
+Each scan writes one line per position before its results:
+
+```
+`ab12cd34` · nomic-embed-text · 3,412 chars · max 0.686 · median 0.512 · min 0.433
+```
+
+The hash is of the anchor body as embedded, after frontmatter is stripped. Without it, a score
+that moved between two scans is ambiguous — the market may have shifted, or the anchor may have
+been edited, and the log cannot tell you which. The three statistics are the ceiling and spread
+of that run, recorded so a time series exists later. None of it can be added retroactively,
+which is the whole reason it is written now rather than when it is needed.
 
 ## Tests
 

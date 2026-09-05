@@ -145,8 +145,7 @@ taxonomy, a seniority filter, an explicit keyword.
 
 ## Method
 
-Nothing above was argued from taste. Measure your own anchor the same way, using the
-project's embedding helper:
+Nothing above was argued from taste. It was done by hand, in a scratch file, with:
 
 ```python
 from fenix.embedding import embed, cosine_similarity
@@ -154,12 +153,34 @@ v = embed(anchor_text)
 score = cosine_similarity(v, embed(posting_text))
 ```
 
-Write your postings once, keep them in a scratch file, and re-score before and after each
-edit.
+That is now a command. Write your postings into `search/probes/`, one per file, each marked
+`want: true` or `want: false`, and run:
+
+```bash
+uv run fenix score
+```
+
+It prints the ranking, the separation between the two groups, the margin (lowest wanted minus
+highest unwanted — the number that says whether any threshold could separate them), the count
+of inverted pairs, and the change against the previous run.
 
 **Include the unwanted ones — they are the control.** An edit that raises the wanted scores
 *and* the unwanted ones has changed the document's verbosity, not its aim, and without a
 control every edit looks like an improvement.
+
+### The limit of this method
+
+Everything above scores the anchor against **job postings**. The scanner uses the same anchor
+to rank **articles**. Those are different genres, and an anchor that separates postings cleanly
+can still rank industry news badly — nothing in a probe set will tell you, because no probe is
+an article.
+
+The only check for that is a person reading the scan output and saying what they would actually
+have read. `fenix rate` collects exactly that, with the scores hidden and the order shuffled so
+the judgement stays independent of the ranking it is judging.
+
+Why this method needed to become a command at all — and what still cannot be measured, with the
+reason — is in [`measuring-a-position.md`](measuring-a-position.md).
 
 This is cheap enough to do for any prompt, any retrieval anchor, any embedded document. It
 takes minutes, and here it overturned a document that read perfectly well.

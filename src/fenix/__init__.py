@@ -1,10 +1,12 @@
 """fenix — a discovery tool for reading the state of a market.
 
-Three commands, one corpus:
+Five commands, one corpus:
 
     fenix scan            rank the incoming stream against position descriptions
     fenix ingest          fetch article text, chunk, embed, store
     fenix ask "question"  answer from the corpus, citing the chunks used
+    fenix score           score each position against the labelled probe postings
+    fenix rate            rate the last scan by hand, and compare with the ranking
 """
 
 import sys
@@ -28,6 +30,12 @@ def main() -> None:
             print('Usage: fenix ask "your question" [--show-chunks]')
             sys.exit(1)
         ask(question, show_chunks="--show-chunks" in args)
+    elif command == "score":
+        from .score import score
+        score()
+    elif command == "rate":
+        from .rate import rate
+        rate()
     elif command == "reindex":
         from . import store
         from .embedding import embed

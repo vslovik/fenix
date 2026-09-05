@@ -9,6 +9,7 @@ Local embeddings via Ollama (nomic-embed-text), no API keys, no rate limits.
 See sources.yaml for the seed list, positions/README.md for the position-file format.
 """
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -16,7 +17,7 @@ from pathlib import Path
 import feedparser
 import yaml
 
-from .embedding import cosine_similarity, embed
+from .embedding import EMBED_MODEL, cosine_similarity, embed
 
 ROOT = Path(__file__).resolve().parents[2]
 SEARCH_DIR = ROOT / "search"
@@ -26,20 +27,38 @@ LOG_FILE = SEARCH_DIR / "signals_log.md"
 POSITIONS_DIR = SEARCH_DIR / "positions"
 
 
+def split_frontmatter(text: str) -> tuple[dict, str]:
+    """Separate a leading YAML fence from the body that gets embedded.
+
+    Everything above the fence is stripped, which is the whole point of having one:
+    a note *about* a document would otherwise compete with the document, and leading
+    text weighs heaviest. See lessons/embedding-anchors.md, Finding 3.
+    """
+    match = re.match(r"^---\n(.*?)\n---\n", text, re.DOTALL)
+    if not match:
+        return {}, text
+    return yaml.safe_load(match.group(1)) or {}, text[match.end():]
+
+
 def load_positions() -> dict:
-    """Returns {name: {"tags": [...], "vector": [...]}} for every .md file in positions/."""
+    """Returns {name: {tags, chars, digest, vector}} for each positions/*.md.
+
+    `digest` is a hash of the embedded body. Without it a score that moved between
+    two scans is ambiguous — the market may have shifted, or the anchor may have been
+    edited, and the log cannot tell you which. Recording it costs nothing now and
+    cannot be reconstructed later.
+    """
     positions = {}
     for path in sorted(POSITIONS_DIR.glob("*.md")):
         if path.name == "README.md":
             continue
-        text = path.read_text()
-        tags = []
-        frontmatter_match = re.match(r"^---\n(.*?)\n---\n", text, re.DOTALL)
-        if frontmatter_match:
-            front = yaml.safe_load(frontmatter_match.group(1)) or {}
-            tags = front.get("tags", [])
-            text = text[frontmatter_match.end():]
-        positions[path.stem] = {"tags": tags, "vector": embed(text)}
+        front, body = split_frontmatter(path.read_text())
+        positions[path.stem] = {
+            "tags": front.get("tags", []),
+            "chars": len(body),
+            "digest": hashlib.sha1(body.encode()).hexdigest()[:8],
+            "vector": embed(body),
+        }
     return positions
 
 
@@ -116,6 +135,10 @@ def append_to_log(entries: list[dict], positions: dict) -> None:
         tag_str = f" ({', '.join(pdata['tags'])})" if pdata["tags"] else ""
         lines.append(f"### {pname}{tag_str}\n")
         ranked = sorted(entries, key=lambda e: e["scores"][pname], reverse=True)
+        values = [e["scores"][pname] for e in ranked]
+        mid = values[len(values) // 2]
+        lines.append(f"`{pdata['digest']}` · {EMBED_MODEL} · {pdata['chars']:,} chars · "
+                     f"max {values[0]:.3f} · median {mid:.3f} · min {values[-1]:.3f}\n")
         for entry in ranked:
             lines.append(f"- **{entry['scores'][pname]:.3f}** [{entry['title']}]({entry['link']}) "
                           f"— {entry['source']}, {entry['published']}")

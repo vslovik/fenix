@@ -237,3 +237,40 @@
 - **0.352** [ThursdAI - Jul 16 - Inkling 975B open weights, Kimi K3 at 2.8T, a 27B model on a phone & Codex hits 9M](https://sub.thursdai.news/p/thursdai-jul-16-inkling-975b-open) — ThursdAI, Fri, 17 Jul 2026 07:00:33 GMT
 - **0.334** [GPT 5.5, ChatGPT Images 2.0, Qwen3.6-27B](https://simonw.substack.com/p/gpt-55-chatgpt-images-20-qwen36-27b) — Simon Willison's Newsletter, Fri, 24 Apr 2026 04:03:22 GMT
 
+
+## Scan — 2026-09-05T06:09+00:00
+(30 new item(s) this run)
+
+### target_role (job-search, ai-initiative)
+
+- **0.686** [Lovable CTO: The Future of SaaS Is Apps That Agents Can Use](https://www.latent.space/p/lovable-future-of-saas) — Latent Space, Wed, 26 Aug 2026 16:16:25 GMT
+- **0.667** [PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors](https://www.latent.space/p/pr-not-welcome) — Latent Space, Tue, 01 Sep 2026 16:17:15 GMT
+- **0.636** [The AI Race Is Moving Beyond Models](https://turingpost.substack.com/p/the-ai-race-is-moving-beyond-models) — Turing Post, Wed, 26 Aug 2026 01:39:39 GMT
+- **0.631** [GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour](https://www.latent.space/p/astra) — Latent Space, Thu, 03 Sep 2026 21:09:41 GMT
+- **0.602** [[AINews] Andrew Ng gets into AI Engineering](https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering) — Latent Space, Tue, 25 Aug 2026 02:50:57 GMT
+- **0.601** [🔬“We have foundation models for language, not for physics” — Anima Anandkumar, Bren Professor of Computing](https://www.latent.space/p/anima) — Latent Space, Wed, 26 Aug 2026 15:15:39 GMT
+- **0.596** [DeepSeek Opens the Agent Layer — While Agents Get Harder to See Inside](https://turingpost.substack.com/p/deepseek-opens-the-agent-layer-while) — Turing Post, Wed, 19 Aug 2026 01:48:03 GMT
+- **0.588** [[AINews] Death of Params: Z.ai CEO Jie Tang on GLM 5.3 and the new Post-training Scaling Law](https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie) — Latent Space, Thu, 20 Aug 2026 05:17:12 GMT
+- **0.580** [Simulation: the new Scaling Law — Joon Sung Park, Simile AI](https://www.latent.space/p/simile) — Latent Space, Fri, 21 Aug 2026 23:37:38 GMT
+- **0.567** [[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time](https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest) — Latent Space, Fri, 04 Sep 2026 05:18:11 GMT
+- **0.561** [The Evolution of the Agent Harness](https://www.latent.space/p/attention-interface) — Latent Space, Sat, 22 Aug 2026 07:30:52 GMT
+- **0.554** [Welcome to AGI part 1 - Fable 5.1, Muse Spark beats Sol, 3 new world models blow our minds](https://sub.thursdai.news/p/thursdai-sep-3-2026-fable-51-and) — ThursdAI, Fri, 04 Sep 2026 03:11:14 GMT
+- **0.535** [Teaching Everyone to Fish for Tokens](https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens) — Interconnects AI, Mon, 17 Aug 2026 15:07:49 GMT
+- **0.532** [[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens](https://www.latent.space/p/ainews-claude-fablemythos-51-new) — Latent Space, Wed, 02 Sep 2026 07:46:08 GMT
+- **0.519** [The /wayfinder Skill: Navigating the “Fog of War” of Planning](https://www.latent.space/p/wayfinder-skill) — Latent Space, Thu, 20 Aug 2026 20:59:09 GMT
+- **0.518** [Chill week with Qwen 27B and GLM 5.3 beating GPTs, OpenAI announces pausing RL to focus on security and a cancer vaccine being produced](https://sub.thursdai.news/p/openai-pauses-stripe-buys-openrouter) — ThursdAI, Fri, 21 Aug 2026 01:06:47 GMT
+- **0.515** [[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over](https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x) — Latent Space, Sat, 22 Aug 2026 07:36:00 GMT
+- **0.502** [NVIDIA Buys Hugging Face! GLM-5.3-Flash, Qwen4 Preview, Gemini Omni 1.1, and the Datacenter Debate w/ Andy Masley](https://sub.thursdai.news/p/nvidia-buys-hugging-face-glm-53-flash) — ThursdAI, Fri, 28 Aug 2026 00:21:30 GMT
+- **0.498** [[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training](https://www.latent.space/p/ainews-muse-spark-13-matches-gpt) — Latent Space, Thu, 03 Sep 2026 04:38:33 GMT
+- **0.488** [[AINews] OpenAI to reach AGI bar by end-2026](https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by) — Latent Space, Fri, 28 Aug 2026 07:12:10 GMT
+- **0.472** [Welcome to AGI - our GPT-6 deep coverage, vibe check and demoes - part 2 of this insane week](https://sub.thursdai.news/p/sep-3-part-2-welcome-to-agi-openai) — ThursdAI, Fri, 04 Sep 2026 04:00:06 GMT
+- **0.468** [[AINews] OpenAI shuts off Cursor](https://www.latent.space/p/ainews-openai-shuts-off-cursor) — Latent Space, Sat, 29 Aug 2026 05:11:52 GMT
+- **0.456** [Conceptual integrity and counting lines of code](https://simonw.substack.com/p/conceptual-integrity-and-counting) — Simon Willison's Newsletter, Sun, 23 Aug 2026 20:57:32 GMT
+- **0.448** [[AINews] Hot Chips: OpenAI’s Jalapeño, Cerebras CS-5, Groq 3 LPX, Apple M6](https://www.latent.space/p/ainews-hot-chips-openais-jalapeno) — Latent Space, Thu, 27 Aug 2026 01:31:22 GMT
+- **0.442** [[AINews] NVIDIA buys HuggingFace for $13B, as OpenAI publishes their HF incident retro](https://www.latent.space/p/ainews-nvidia-buys-huggingface-for) — Latent Space, Thu, 27 Aug 2026 01:50:54 GMT
+- **0.433** [[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier](https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the) — Latent Space, Tue, 01 Sep 2026 04:36:54 GMT
+- **0.433** [[AINews] Poolside gets $12B reverse-execuhire to NVIDIA; founders stay for $1B, employees go for $6B, Infraco scaling to 7GW neocloud](https://www.latent.space/p/ainews-poolside-gets-12b-reverse) — Latent Space, Fri, 21 Aug 2026 05:45:21 GMT
+- **0.414** [[AINews] Memory prices up 500% in 12 months](https://www.latent.space/p/ainews-memory-prices-up-500-in-12) — Latent Space, Wed, 19 Aug 2026 08:44:52 GMT
+- **0.395** [Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things](https://simonw.substack.com/p/qwen-38-27b-is-excellent-but-it-defaults) — Simon Willison's Newsletter, Mon, 17 Aug 2026 00:33:31 GMT
+- **0.360** [Understanding ChatGPT Work](https://simonw.substack.com/p/understanding-chatgpt-work) — Simon Willison's Newsletter, Mon, 31 Aug 2026 04:24:21 GMT
+
