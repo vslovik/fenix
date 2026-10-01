@@ -274,3 +274,49 @@
 - **0.395** [Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things](https://simonw.substack.com/p/qwen-38-27b-is-excellent-but-it-defaults) — Simon Willison's Newsletter, Mon, 17 Aug 2026 00:33:31 GMT
 - **0.360** [Understanding ChatGPT Work](https://simonw.substack.com/p/understanding-chatgpt-work) — Simon Willison's Newsletter, Mon, 31 Aug 2026 04:24:21 GMT
 
+
+## Scan — 2026-10-01T16:21+00:00
+(37 new item(s) this run)
+
+### target_role (job-search, ai-initiative)
+
+`37e4837c` · nomic-embed-text · 1,198 chars · max 0.653 · median 0.525 · min 0.320
+
+- **0.653** [We’re Building Faster Than We’re Understanding](https://turingpost.substack.com/p/were-building-faster-than-were-understanding) — Turing Post, Fri, 11 Sep 2026 02:38:30 GMT
+- **0.650** [What Should AI Be Allowed to Change?](https://turingpost.substack.com/p/what-should-ai-be-allowed-to-change) — Turing Post, Wed, 16 Sep 2026 02:26:11 GMT
+- **0.628** [When will average people feel AI’s impact?](https://www.interconnects.ai/p/when-will-average-people-feel-ais) — Interconnects AI, Wed, 09 Sep 2026 11:01:23 GMT
+- **0.599** [Programming is Dead, Opus 5.5, GPT-6 Astra/Sol/Luna, Jev-bench, Agents Crack Navier-Stokes, Jeff Dean leaves Google](https://codingwithintelligence.com/p/programming-is-dead-opus-55-gpt-6) — Coding with Intelligence, Sun, 27 Sep 2026 14:48:56 GMT
+- **0.596** [🔬 An Oscar, Two Asteroids, and the Algorithm in Your sklearn: John Platt on AI for Science](https://www.latent.space/p/john-platt) — Latent Space, Tue, 22 Sep 2026 21:07:39 GMT
+- **0.589** [Open-Source AI & Open Models Reading List](https://www.interconnects.ai/p/open-source-ai-reading-list) — Interconnects AI, Fri, 11 Sep 2026 12:36:25 GMT
+- **0.583** [Underwriting Superintelligence: Backing Agents you can Sue — Rune Kvist, AIUC](https://www.latent.space/p/aiuc) — Latent Space, Wed, 16 Sep 2026 18:07:45 GMT
+- **0.573** [Jev: System One models for Prod, not God — with Diogo Almeida, CEO, TypeSafe AI](https://www.latent.space/p/jev) — Latent Space, Mon, 21 Sep 2026 22:13:49 GMT
+- **0.573** [[AINews] OpenAI DevDay 2026: Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces, Marketplace, and 1.2 Billion ChatGPT WAU](https://www.latent.space/p/ainews-openai-devday-2026-dots-61) — Latent Space, Wed, 30 Sep 2026 05:53:10 GMT
+- **0.566** [OpenAI solves Navier-Stokes, Meta’s Muse a free AI agent that’s really good, DeepSeek V4.1 shrinks KV cache, and one doomer post causes OpenAI to consider pausing training + more AI news](https://sub.thursdai.news/p/openai-solves-navier-stokes-metas) — ThursdAI, Fri, 11 Sep 2026 04:44:43 GMT
+- **0.549** [🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)](https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric) — Latent Space, Wed, 23 Sep 2026 13:27:18 GMT
+- **0.547** [Why I still haven’t bought into true RSI](https://www.interconnects.ai/p/where-i-stand-on-rsi) — Interconnects AI, Sat, 19 Sep 2026 15:42:20 GMT
+- **0.539** [[AINews] The Future of Latent Space](https://www.latent.space/p/ainews-the-future-of-latent-space) — Latent Space, Fri, 25 Sep 2026 05:37:00 GMT
+- **0.536** [[AINews] Reality Checks on AI News (Yegge shuts down Gas Town, Databricks’ +60% Astra cost)](https://www.latent.space/p/ainews-reality-checks-on-ai-news) — Latent Space, Thu, 17 Sep 2026 07:28:25 GMT
+- **0.536** [Why Dwarkesh is Wrong about Computer Use + How OpenAI shipped its Jev competitor in 1 Week](https://www.latent.space/p/devday-2026) — Latent Space, Wed, 30 Sep 2026 22:23:40 GMT
+- **0.534** [OpenRouter: from Seed to Stripe — with OpenRouter’s Alex Atallah & AMP’s Anjney Midha](https://www.latent.space/p/openrouter) — Latent Space, Fri, 25 Sep 2026 23:14:41 GMT
+- **0.530** [Runway’s WorldPrompt and the Engineering of Real-Time Worlds](https://www.latent.space/p/runway) — Latent Space, Fri, 25 Sep 2026 01:30:57 GMT
+- **0.529** [Claude Code’s Next Era — Thariq Shihipar, Anthropic](https://www.latent.space/p/thariq) — Latent Space, Tue, 29 Sep 2026 01:48:18 GMT
+- **0.525** [[AINews] AMD buys World Labs for $8.2B, as Atlas solves sparse reconstruction problem for robotics, design and more](https://www.latent.space/p/ainews-amd-buys-world-labs-for-82b) — Latent Space, Tue, 29 Sep 2026 02:55:27 GMT
+- **0.520** [Opus 5.5 is your new workhorse! OpenAI ships GPT 6 Sol and Luna before DevDay and Meta goes all in on Muse! Your friday read is here](https://sub.thursdai.news/p/thursdai-sep-24-opus-55-beats-fable) — ThursdAI, Fri, 25 Sep 2026 05:48:11 GMT
+- **0.518** [Jev introduces a new shape of LLM - System One, aka Decision Models](https://simonw.substack.com/p/jev-introduces-a-new-shape-of-llm) — Simon Willison's Newsletter, Mon, 21 Sep 2026 23:33:40 GMT
+- **0.515** [[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%](https://www.latent.space/p/ainews-claude-opus-55-the-new-default) — Latent Space, Wed, 23 Sep 2026 06:41:41 GMT
+- **0.511** [The current balance of power in open models](https://www.interconnects.ai/p/the-current-balance-of-power-in-open) — Interconnects AI, Mon, 21 Sep 2026 11:56:56 GMT
+- **0.511** [Foundries vs Navigators: Lowering the Cost of Science](https://www.latent.space/p/foundries-vs-navigators-lowering) — Latent Space, Thu, 24 Sep 2026 15:03:16 GMT
+- **0.503** [ThursdAI - Sep 17 - TypeSafe's Jev is a ChatGPT moment for decisions, Pace the Frontier splits the labs & more](https://sub.thursdai.news/p/typesafes-jev-changes-everything) — ThursdAI, Fri, 18 Sep 2026 05:39:36 GMT
+- **0.480** [One resignation turned the embers of AI fear into a wildfire](https://www.interconnects.ai/p/one-resignation-turned-the-embers) — Interconnects AI, Thu, 10 Sep 2026 15:28:52 GMT
+- **0.477** [Latest open artifacts (#24): Motif-3, GLM-5.3, Hy4-preview and open model licenses](https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3) — Interconnects AI, Tue, 08 Sep 2026 14:15:25 GMT
+- **0.474** [Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI](https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and) — Interconnects AI, Tue, 22 Sep 2026 13:37:45 GMT
+- **0.467** [[AINews] Xiaomi MiMo-V2.6-Pro 1T-A42B: the new top Open Weights model, trained for $3M](https://www.latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b) — Latent Space, Tue, 22 Sep 2026 06:30:56 GMT
+- **0.464** [[AINews] Meta Connect 2026: Muse glasses, voice, video, and Charm](https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses) — Latent Space, Thu, 24 Sep 2026 08:12:59 GMT
+- **0.459** [2026 in LLMs (so far)](https://simonw.substack.com/p/2026-in-llms-so-far) — Simon Willison's Newsletter, Mon, 28 Sep 2026 16:42:27 GMT
+- **0.456** [[AINews] Gemini 4 Argon: GDM’s answer to Astra/Fable, with 1M output](https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer) — Latent Space, Thu, 01 Oct 2026 06:45:05 GMT
+- **0.452** [Navier–Stokes, RubyGems attacked, GIS and Blender with GPT-6 Astra](https://simonw.substack.com/p/navierstokes-rubygems-attacked-gis) — Simon Willison's Newsletter, Mon, 14 Sep 2026 20:47:59 GMT
+- **0.450** [[AINews] Here are 6 Clones of Jev in 2 days](https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in) — Latent Space, Sat, 19 Sep 2026 05:48:28 GMT
+- **0.416** [[AINews] Opus 5.5 is good at explainer videos](https://www.latent.space/p/ainews-opus-55-is-good-at-explainer) — Latent Space, Tue, 29 Sep 2026 02:44:29 GMT
+- **0.393** [GPT-6 Astra, Claude Fable 5.1, and yet more rogue agent attacks](https://simonw.substack.com/p/gpt-6-astra-claude-fable-51-and-yet) — Simon Willison's Newsletter, Mon, 07 Sep 2026 16:48:55 GMT
+- **0.320** [[AINews] not much happened today](https://www.latent.space/p/ainews-not-much-happened-today-612) — Latent Space, Fri, 18 Sep 2026 06:28:43 GMT
+
