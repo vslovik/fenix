@@ -296,3 +296,68 @@ outside the anchor: a second position file for the architecture family, or an `m
 labelled `want: true` placed deliberately close to the research control, to measure whether the
 distinction between wanting ML engineering and not wanting ML research is expressible in this space
 at all.
+
+---
+
+# What the method cannot see
+
+*2026-10-07. Two probes added to test a dimension the first eight ignored, and the result is a
+negative one worth more than a fix.*
+
+The eight original probes test **what the work is**. None of them tests **who is around while it is
+done** — and that is the dimension that has actually determined satisfaction in past roles, recorded
+as the vacuum test in the private material: *"I tend to stay alone in the vacuum."*
+
+So two more were written, deliberately sharing their subject matter — production LLM and agent
+systems — so that the only variable is the team:
+
+- `sole-technical-hire`, **`want: false`** — first engineer, non-technical founder, own everything,
+  no review, no team to inherit.
+- `engineering-team-staff`, **`want: true`** — staff engineer in a platform group of nine, peers who
+  know more about failure modes and about ranking, every change reviewed.
+
+```
+0.807  want  AI agent engineering
+0.736  SKIP  Sole technical hire                <-- second of ten
+0.735  want  Founding engineer (seed)
+0.720  want  Staff engineer in an existing team
+0.699  want  RAG engineer
+0.661  want  LLM evaluation and observability
+0.657  SKIP  ML research scientist
+0.649  want  Software architect
+0.646  SKIP  Full-stack JavaScript
+0.601  SKIP  Java/Spring backend
+
+separation +0.052   margin -0.086   inversions 6/24
+```
+
+## The anchor ranks isolation above company
+
+The control comes **second of ten**, above every wanted role but one, and **above the team probe by
+0.016**. Five of the six inversions come from that one probe. An anchor tuned all morning to rank
+roles correctly turns out to be optimised to find the shape that has made past roles unhappy —
+because *owning the architecture from zero*, *shipping the first production system* and *being in
+the room where the work gets defined* describe being the only engineer at least as well as they
+describe influence.
+
+## The distinction is not in the text
+
+`sole-technical-hire` and `founding-engineer-seed` score **0.001 apart**. They are the same job as
+far as the embedding is concerned, and nearly the same job as written: the wanted one says *"first
+engineering hire after the founders"* and never says the founders are engineers.
+
+**So no anchor edit can separate them.** Any wording that lowers one lowers the other, because the
+difference is not a property of the posting — it is a fact about the company that postings do not
+state.
+
+## And the obvious repair is blocked by the August finding
+
+The instinct is to add an explicit ask for colleagues to the anchor. But the control's own text says
+*"there is no engineering team to inherit"*, and by the negation finding above, that sentence embeds
+**toward** team vocabulary. Adding team language to the anchor would likely raise the control along
+with the target.
+
+**Rule: a dimension that postings do not state cannot be filtered by ranking them.** It has to be
+asked — of a counterparty, in the first reply — and asked for, in the outbound text that decides
+which approaches arrive at all. The measurement's value here was to prove the gap exists and to stop
+an afternoon being spent trying to close it from the wrong end.
