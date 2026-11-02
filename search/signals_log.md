@@ -320,3 +320,52 @@
 - **0.393** [GPT-6 Astra, Claude Fable 5.1, and yet more rogue agent attacks](https://simonw.substack.com/p/gpt-6-astra-claude-fable-51-and-yet) — Simon Willison's Newsletter, Mon, 07 Sep 2026 16:48:55 GMT
 - **0.320** [[AINews] not much happened today](https://www.latent.space/p/ainews-not-much-happened-today-612) — Latent Space, Fri, 18 Sep 2026 06:28:43 GMT
 
+
+## Scan — 2026-11-02T18:48+00:00
+(40 new item(s) this run)
+
+### target_role (job-search, ai-initiative)
+
+`83df6ed9` · nomic-embed-text · 2,008 chars · max 0.688 · median 0.538 · min 0.317
+
+- **0.688** [AI Is Learning What to Remember, Predict, and Decide](https://turingpost.substack.com/p/ai-is-learning-what-to-remember-predict) — Turing Post, Fri, 16 Oct 2026 23:40:40 GMT
+- **0.685** [Agents Prompt People: Using Agents for Long-Horizon Financial Work](https://latent.space/p/arca/) — Latent Space, Sat, 31 Oct 2026 16:05:00 GMT
+- **0.682** [Chen Goldberg (CoreWeave) on the AI loop, Forge and infrastructure for agents](https://sub.thursdai.news/p/chen-goldberg-coreweave-on-the-ai) — ThursdAI, Mon, 12 Oct 2026 23:23:35 GMT
+- **0.667** [How Much More Can We Get From the AI We Already Have?](https://turingpost.substack.com/p/how-much-more-can-we-get-from-the) — Turing Post, Thu, 22 Oct 2026 14:22:10 GMT
+- **0.658** [Better AI Decisions Need More Than Better Models](https://turingpost.substack.com/p/better-ai-decisions-need-more-than) — Turing Post, Wed, 28 Oct 2026 12:35:57 GMT
+- **0.657** [I expect rapid progress but not towards general superintelligence](https://www.interconnects.ai/p/i-expect-rapid-progress-but-not-towards) — Interconnects AI, Fri, 09 Oct 2026 21:33:47 GMT
+- **0.644** [How Anthropic ships the #1 LLM in the World safely: Separating the Brain from the Hands](https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/) — Latent Space, Tue, 27 Oct 2026 18:40:19 GMT
+- **0.629** [Why Agents Love Supabase](https://latent.space/p/supabase/) — Latent Space, Wed, 28 Oct 2026 19:48:05 GMT
+- **0.629** [AI Is Getting Good at Math. Here’s Why.](https://latent.space/p/ai-is-getting-good-at-math/) — Latent Space, Fri, 23 Oct 2026 15:19:48 GMT
+- **0.628** [AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman & CJ Hess](https://latent.space/p/tenex/) — Latent Space, Wed, 21 Oct 2026 05:01:26 GMT
+- **0.626** [[AINews] Building AIE CODE: The top Coding Agent Conference](https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference/) — Latent Space, Fri, 30 Oct 2026 08:24:29 GMT
+- **0.618** [You are the Team  — Anekha Sokhal, Moshi](https://latent.space/p/moshi/) — Latent Space, Thu, 22 Oct 2026 14:03:40 GMT
+- **0.617** [Claude now leads 26% of Anthropic’s R&D, Meta drops an 816B open model & Gemini 4 Argon](https://sub.thursdai.news/p/thursdai-oct-15-meta-ships-muse-wonder) — ThursdAI, Fri, 16 Oct 2026 03:21:55 GMT
+- **0.592** [How Anthropic ships Claude with Claude: Separating the Brain from the Hands](https://latent.space/p/opus55/) — Latent Space, Tue, 27 Oct 2026 18:53:10 GMT
+- **0.589** [Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO](https://latent.space/p/modal-d/) — Latent Space, Thu, 22 Oct 2026 17:40:57 GMT
+- **0.559** [ThursdAI - Oct 22 - AI finds all the vulnerabilities, Claude Duet, DeepSeek drops Infer & more AI news](https://sub.thursdai.news/p/thursdai-oct-22-ai-finds-all-the) — ThursdAI, Fri, 23 Oct 2026 01:12:40 GMT
+- **0.557** [Was I wrong about open models & cyber risks?](https://www.interconnects.ai/p/was-i-wrong-about-open-models-and) — Interconnects AI, Fri, 30 Oct 2026 17:36:56 GMT
+- **0.550** [[AINews] Anthropic ends Coding Interviews: "Hunger beats tenure"](https://latent.space/p/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure/) — Latent Space, Wed, 28 Oct 2026 08:50:30 GMT
+- **0.543** [Coding From the Himalayas With an Offline AI Agent](https://latent.space/p/offline-coding/) — Latent Space, Tue, 27 Oct 2026 14:41:25 GMT
+- **0.542** [[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed](https://latent.space/p/ainews-kimi-31/) — Latent Space, Sat, 24 Oct 2026 07:18:29 GMT
+- **0.538** [Artificial Analysis v5 and the benchmarker's dilemma](https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers) — Interconnects AI, Wed, 28 Oct 2026 12:58:39 GMT
+- **0.527** [[AINews] Google admits AI Mode hurts Search revenue; -15% $500B drop worst since 2004 IPO. AI Bear Market coming?](https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c/) — Latent Space, Sat, 31 Oct 2026 05:00:48 GMT
+- **0.516** [Can Frontier Models See Past a Decoy? Elorian Tests Visual Reasoning](https://latent.space/p/elorian/) — Latent Space, Thu, 29 Oct 2026 16:00:00 GMT
+- **0.505** [ThursdAI - Oct 29 - Gemini 4 Carbon is the new #1, Anthropic files to go public & more](https://sub.thursdai.news/p/thursdai-oct-29-gemini-4-carbon-is) — ThursdAI, Thu, 29 Oct 2026 22:07:35 GMT
+- **0.503** [[AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback](https://latent.space/p/ainews-deepseek-deepinfer-open-source/) — Latent Space, Wed, 21 Oct 2026 06:54:09 GMT
+- **0.499** [ThursdAI - Oct 8 - OpenAI drops 722 math papers, Haiku 5.5 hits 10 cents & more](https://sub.thursdai.news/p/thursdai-oct-8-openai-drops-722-math) — ThursdAI, Fri, 09 Oct 2026 00:21:23 GMT
+- **0.498** [ThursdAI - Oct 1 - OpenAI joins the assistant race, CoreWeave drops serverless GPUs & more](https://sub.thursdai.news/p/thursdai-oct-1-openai-joins-the-assistant) — ThursdAI, Fri, 02 Oct 2026 03:01:02 GMT
+- **0.492** [[AINews] Anthropic files for $2T IPO in 2 weeks: 1400% growth rate, 48% of revenue through cloud partners, 85% margin, $1B op profit in Q2, $134B cash in bank and $10B lifetime burn](https://latent.space/p/ainews-anthropic-s1/) — Latent Space, Tue, 27 Oct 2026 07:24:59 GMT
+- **0.491** [[AINews] Gemini 4 Carbon tops leaderboards, launches for cyber defenders](https://latent.space/p/ainews-gemini-4-carbon/) — Latent Space, Thu, 29 Oct 2026 05:55:19 GMT
+- **0.486** [Latest open artifacts (#25): DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US & China](https://www.interconnects.ai/p/latest-open-artifacts-25-deepseek) — Interconnects AI, Tue, 20 Oct 2026 17:04:21 GMT
+- **0.480** [Claude Mods: Flipping the Harness Inside Out](https://latent.space/p/claude-mods/) — Latent Space, Wed, 21 Oct 2026 13:04:19 GMT
+- **0.471** [[AINews] OpenAI’s Patch the Planet program is 1 of 2 parties to discover PHP2Shell vulnerabilities in core PHP affecting 70% of the web, using GPT-5.6 Sol; coordinated response over 2 months](https://latent.space/p/ainews-openais-patch-the-planet-program/) — Latent Space, Thu, 22 Oct 2026 07:42:44 GMT
+- **0.456** [Battle Drones - a vibe coded RTS with audio-based multiplayer](https://simonw.substack.com/p/battle-drones-a-vibe-coded-rts-with) — Simon Willison's Newsletter, Wed, 21 Oct 2026 00:01:39 GMT
+- **0.445** [OpenAI DevDay 2026 live blog](https://simonw.substack.com/p/openai-devday-2026-live-blog) — Simon Willison's Newsletter, Mon, 05 Oct 2026 17:16:45 GMT
+- **0.441** [Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings](https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber) — Interconnects AI, Sun, 25 Oct 2026 11:49:00 GMT
+- **0.412** [The Cyber Risk Discourse is Broken](https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken) — Interconnects AI, Tue, 06 Oct 2026 14:22:41 GMT
+- **0.400** [The October inflection point for vibe game development](https://simonw.substack.com/p/the-october-inflection-point-for) — Simon Willison's Newsletter, Wed, 28 Oct 2026 15:21:47 GMT
+- **0.397** [I built a new feature for my blog using my voice](https://simonw.substack.com/p/i-built-a-new-feature-for-my-blog) — Simon Willison's Newsletter, Mon, 12 Oct 2026 22:29:32 GMT
+- **0.367** [[AINews] Black October](https://latent.space/p/ainews-black-october/) — Latent Space, Fri, 23 Oct 2026 10:09:29 GMT
+- **0.317** [Meta shakes up the frontiers, open and closed](https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open) — Interconnects AI, Sat, 17 Oct 2026 14:06:54 GMT
+
